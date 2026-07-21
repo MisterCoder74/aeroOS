@@ -1,0 +1,1213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C3A0255-473F-4B7C-837E-9F10F4480689}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AERO.My.MyApplication</StartupObject>
+    <RootNamespace>AERO</RootNamespace>
+    <AssemblyName>AERO</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish3\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>6.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AERO.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AERO.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>aero2018.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B91060AFDDEB6B489405417816B877E4E05CB091</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>panelOS_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.AcroPDFLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AxInterop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.SCANNERLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AxInterop.SCANNERLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AxInterop.ShockwaveFlashObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="DevRain.Data.Extracting, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\DevRain.Data.Extracting.dll</HintPath>
+    </Reference>
+    <Reference Include="ElegantTheme">
+      <HintPath>..\Componenti VB\Elegant Theme\ElegantTheme\bin\Debug\ElegantTheme.dll</HintPath>
+    </Reference>
+    <Reference Include="ExpTreeLib, Version=2.12.5523.42614, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ExpTreeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IMAPI_CDBurner, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\IMAPI_CDBurner.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="SBBpanel">
+      <HintPath>..\Componenti VB\shady panel with blu bar\SBBpanel\bin\Debug\SBBpanel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TBButton">
+      <HintPath>..\Componenti VB\translucent black button\TBButton\bin\Debug\TBButton.dll</HintPath>
+    </Reference>
+    <Reference Include="TBpanel">
+      <HintPath>..\Componenti VB\translucent black panel\TBpanel\bin\Debug\TBpanel.dll</HintPath>
+    </Reference>
+    <Reference Include="TWbutton">
+      <HintPath>..\Componenti VB\translucent white button\TWbutton\bin\Debug\TWbutton.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addbook.Designer.vb">
+      <DependentUpon>addbook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addbook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addword.Designer.vb">
+      <DependentUpon>addword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aero dictionary.Designer.vb">
+      <DependentUpon>aero dictionary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aero dictionary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aero.Designer.vb">
+      <DependentUpon>aero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alarmclock.Designer.vb">
+      <DependentUpon>alarmclock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="alarmclock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="bigshow.Designer.vb">
+      <DependentUpon>bigshow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bigshow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="breakout.designer.vb">
+      <DependentUpon>breakout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="breakout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cdburner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clipmanager.Designer.vb">
+      <DependentUpon>clipmanager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clipmanager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clsCDBurn.vb" />
+    <Compile Include="clsGameEngine.vb" />
+    <Compile Include="clsGhost.vb" />
+    <Compile Include="clsPac.vb" />
+    <Compile Include="clsSndChanB.vb" />
+    <Compile Include="CookieWebClient.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrawlingView.Designer.vb">
+      <DependentUpon>CrawlingView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CrawlingView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dancerladysetup.Designer.vb">
+      <DependentUpon>dancerladysetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dancerladysetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="desktopclient.Designer.vb">
+      <DependentUpon>desktopclient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="desktopclient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="desktopviewer.Designer.vb">
+      <DependentUpon>desktopviewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="desktopviewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="devices.Designer.vb">
+      <DependentUpon>devices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="devices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutbox.Designer.vb">
+      <DependentUpon>aboutbox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aboutbox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="copyfile.Designer.vb">
+      <DependentUpon>copyfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="copyfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dancersetup.Designer.vb">
+      <DependentUpon>dancersetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dancersetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DJconsolePro.Designer.vb">
+      <DependentUpon>DJconsolePro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DJconsolePro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emailer.designer.vb">
+      <DependentUpon>emailer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="emailer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="erasefile.Designer.vb">
+      <DependentUpon>erasefile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="erasefile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="externalprogs.Designer.vb">
+      <DependentUpon>externalprogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="externalprogs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="externalsetup.Designer.vb">
+      <DependentUpon>externalsetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="externalsetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="explorer.Designer.vb">
+      <DependentUpon>explorer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="explorer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="browser.designer.vb">
+      <DependentUpon>browser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="browser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cclient.Designer.vb">
+      <DependentUpon>cclient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cclient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cserve.designer.vb">
+      <DependentUpon>cserve.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cserve.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filetransfer.Designer.vb">
+      <DependentUpon>filetransfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="filetransfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="flashgames.Designer.vb">
+      <DependentUpon>flashgames.vb</DependentUpon>
+    </Compile>
+    <Compile Include="flashgames.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="friendlist.Designer.vb">
+      <DependentUpon>friendlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="friendlist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScreenCopy.Designer.vb">
+      <DependentUpon>frmScreenCopy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmScreenCopy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStart.Designer.vb">
+      <DependentUpon>frmStart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameover.Designer.vb">
+      <DependentUpon>gameover.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gameover.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoteFindDialog.Designer.vb">
+      <DependentUpon>NoteFindDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NoteFindDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notepad.Designer.vb">
+      <DependentUpon>notepad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="notepad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recent.Designer.vb">
+      <DependentUpon>recent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="recent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoundedCornerTextbox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RssFeed.Designer.vb">
+      <DependentUpon>RssFeed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RssFeed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="runwindows.Designer.vb">
+      <DependentUpon>runwindows.vb</DependentUpon>
+    </Compile>
+    <Compile Include="runwindows.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="scanner.Designer.vb">
+      <DependentUpon>scanner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="scanner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreenCapture.vb" />
+    <Compile Include="spaceinvaders.Designer.vb">
+      <DependentUpon>spaceinvaders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="spaceinvaders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stegano.Designer.vb">
+      <DependentUpon>stegano.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stegano.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zipper.Designer.vb">
+      <DependentUpon>zipper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zipper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iconssetup.Designer.vb">
+      <DependentUpon>iconssetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iconssetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lanlist.Designer.vb">
+      <DependentUpon>lanlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lanlist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediaCrawler.Designer.vb">
+      <DependentUpon>MediaCrawler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MediaCrawler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pacman.Designer.vb">
+      <DependentUpon>pacman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pacman.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNameEntry.designer.vb">
+      <DependentUpon>frmNameEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNameEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printlist.Designer.vb">
+      <DependentUpon>printlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="printlist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="social.Designer.vb">
+      <DependentUpon>social.vb</DependentUpon>
+    </Compile>
+    <Compile Include="social.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interop.vb" />
+    <Compile Include="Invoke_Api.vb" />
+    <Compile Include="maps.Designer.vb">
+      <DependentUpon>maps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="maps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screencapturer.Designer.vb">
+      <DependentUpon>screencapturer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="screencapturer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSoundRecorder.Designer.vb">
+      <DependentUpon>frmSoundRecorder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSoundRecorder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="html.Designer.vb">
+      <DependentUpon>html.vb</DependentUpon>
+    </Compile>
+    <Compile Include="html.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="imgbrowser.Designer.vb">
+      <DependentUpon>imgbrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="imgbrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module2.vb" />
+    <Compile Include="newimage.Designer.vb">
+      <DependentUpon>newimage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newimage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newroot.Designer.vb">
+      <DependentUpon>newroot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newroot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="painter.Designer.vb">
+      <DependentUpon>painter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="painter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resizeimage.Designer.vb">
+      <DependentUpon>resizeimage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="resizeimage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reversi.Designer.vb">
+      <DependentUpon>reversi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reversi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="speak.Designer.vb">
+      <DependentUpon>speak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="speak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginregister.Designer.vb">
+      <DependentUpon>loginregister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loginregister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="media.designer.vb">
+      <DependentUpon>media.vb</DependentUpon>
+    </Compile>
+    <Compile Include="media.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="meteocredits.Designer.vb">
+      <DependentUpon>meteocredits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="meteocredits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="meteoform.designer.vb">
+      <DependentUpon>meteoform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="meteoform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="calc.designer.vb">
+      <DependentUpon>calc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="calc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="note.designer.vb">
+      <DependentUpon>note.vb</DependentUpon>
+    </Compile>
+    <Compile Include="note.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="performance.Designer.vb">
+      <DependentUpon>performance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="performance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="poker.Designer.vb">
+      <DependentUpon>poker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="poker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saveform.Designer.vb">
+      <DependentUpon>saveform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="saveform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectbck.Designer.vb">
+      <DependentUpon>selectbck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selectbck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="senderclient.Designer.vb">
+      <DependentUpon>senderclient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="senderclient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sendserver.Designer.vb">
+      <DependentUpon>sendserver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sendserver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings.Designer.vb">
+      <DependentUpon>settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="speedtest.Designer.vb">
+      <DependentUpon>speedtest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="speedtest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stack.Designer.vb">
+      <DependentUpon>stack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stack.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="startupmusic.Designer.vb">
+      <DependentUpon>startupmusic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="startupmusic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thememanager.Designer.vb">
+      <DependentUpon>thememanager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="thememanager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usersadmin.Designer.vb">
+      <DependentUpon>usersadmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usersadmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wifilist.Designer.vb">
+      <DependentUpon>wifilist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="wifilist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="write.Designer.vb">
+      <DependentUpon>write.vb</DependentUpon>
+    </Compile>
+    <Compile Include="write.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="addbook.resx">
+      <DependentUpon>addbook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addword.resx">
+      <DependentUpon>addword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aero dictionary.resx">
+      <DependentUpon>aero dictionary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aero.resx">
+      <DependentUpon>aero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alarmclock.resx">
+      <DependentUpon>alarmclock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bigshow.resx">
+      <DependentUpon>bigshow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="breakout.resx">
+      <DependentUpon>breakout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cdburner.resx">
+      <DependentUpon>cdburner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clipmanager.resx">
+      <DependentUpon>clipmanager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrawlingView.resx">
+      <DependentUpon>CrawlingView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dancerladysetup.resx">
+      <DependentUpon>dancerladysetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="desktopclient.resx">
+      <DependentUpon>desktopclient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="desktopviewer.resx">
+      <DependentUpon>desktopviewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="devices.resx">
+      <DependentUpon>devices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aboutbox.resx">
+      <DependentUpon>aboutbox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="copyfile.resx">
+      <DependentUpon>copyfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dancersetup.resx">
+      <DependentUpon>dancersetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DJconsolePro.resx">
+      <DependentUpon>DJconsolePro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emailer.resx">
+      <DependentUpon>emailer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="erasefile.resx">
+      <DependentUpon>erasefile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="externalprogs.resx">
+      <DependentUpon>externalprogs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="externalsetup.resx">
+      <DependentUpon>externalsetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="explorer.resx">
+      <DependentUpon>explorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="browser.resx">
+      <DependentUpon>browser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cclient.resx">
+      <DependentUpon>cclient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cserve.resx">
+      <DependentUpon>cserve.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filetransfer.resx">
+      <DependentUpon>filetransfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="flashgames.resx">
+      <DependentUpon>flashgames.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="friendlist.resx">
+      <DependentUpon>friendlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScreenCopy.resx">
+      <DependentUpon>frmScreenCopy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStart.resx">
+      <DependentUpon>frmStart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameover.resx">
+      <DependentUpon>gameover.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoteFindDialog.resx">
+      <DependentUpon>NoteFindDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notepad.resx">
+      <DependentUpon>notepad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recent.resx">
+      <DependentUpon>recent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RssFeed.resx">
+      <DependentUpon>RssFeed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="runwindows.resx">
+      <DependentUpon>runwindows.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scanner.resx">
+      <DependentUpon>scanner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spaceinvaders.resx">
+      <DependentUpon>spaceinvaders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stegano.resx">
+      <DependentUpon>stegano.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zipper.resx">
+      <DependentUpon>zipper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iconssetup.resx">
+      <DependentUpon>iconssetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lanlist.resx">
+      <DependentUpon>lanlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediaCrawler.resx">
+      <DependentUpon>MediaCrawler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pacman.resx">
+      <DependentUpon>pacman.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNameEntry.resx">
+      <DependentUpon>frmNameEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printlist.resx">
+      <DependentUpon>printlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="social.resx">
+      <DependentUpon>social.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maps.resx">
+      <DependentUpon>maps.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screencapturer.resx">
+      <DependentUpon>screencapturer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSoundRecorder.resx">
+      <DependentUpon>frmSoundRecorder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="html.resx">
+      <DependentUpon>html.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="imgbrowser.resx">
+      <DependentUpon>imgbrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newimage.resx">
+      <DependentUpon>newimage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newroot.resx">
+      <DependentUpon>newroot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="painter.resx">
+      <DependentUpon>painter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resizeimage.resx">
+      <DependentUpon>resizeimage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reversi.resx">
+      <DependentUpon>reversi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="speak.resx">
+      <DependentUpon>speak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginregister.resx">
+      <DependentUpon>loginregister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="media.resx">
+      <DependentUpon>media.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="meteocredits.resx">
+      <DependentUpon>meteocredits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="meteoform.resx">
+      <DependentUpon>meteoform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calc.resx">
+      <DependentUpon>calc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="note.resx">
+      <DependentUpon>note.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="performance.resx">
+      <DependentUpon>performance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="poker.resx">
+      <DependentUpon>poker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saveform.resx">
+      <DependentUpon>saveform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectbck.resx">
+      <DependentUpon>selectbck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="senderclient.resx">
+      <DependentUpon>senderclient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sendserver.resx">
+      <DependentUpon>sendserver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings.resx">
+      <DependentUpon>settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="speedtest.resx">
+      <DependentUpon>speedtest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stack.resx">
+      <DependentUpon>stack.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="startupmusic.resx">
+      <DependentUpon>startupmusic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thememanager.resx">
+      <DependentUpon>thememanager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usersadmin.resx">
+      <DependentUpon>usersadmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wifilist.resx">
+      <DependentUpon>wifilist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="write.resx">
+      <DependentUpon>write.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="WICKeyFile.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxAXVLC">
+      <Guid>{DF2BBE39-40A8-433B-A279-073F48DA94B6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AXVLC">
+      <Guid>{DF2BBE39-40A8-433B-A279-073F48DA94B6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\ball.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ball_Blasta.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brick01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brick02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brick03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HitBrick.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HitHardBrick.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HitWall.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LostBall.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="aero2015icon.ico" />
+    <None Include="Resources\fog.png" />
+    <None Include="Resources\cloudy.png" />
+    <None Include="Resources\sunny.png" />
+    <None Include="Resources\rain_s_cloudy.png" />
+    <None Include="Resources\rain_light.png" />
+    <None Include="Resources\partly_cloudy.png" />
+    <None Include="Resources\brick04.jpg" />
+    <None Include="s_aeroback.ico" />
+    <None Include="files\gothlady.gif" />
+    <None Include="files\hiphoplady2.gif" />
+    <None Include="files\App-icon.png" />
+    <None Include="files\themes\coding.jpg" />
+    <None Include="files\themes\coding2.jpg" />
+    <None Include="files\themes\meditate1.jpg" />
+    <None Include="files\BB01.jpg" />
+    <None Include="files\BB02.jpg" />
+    <None Include="files\BB03.jpg" />
+    <None Include="Resources\illumination.wav" />
+    <None Include="files\backs\01.png" />
+    <None Include="files\themes\03.jpg" />
+    <None Include="files\aeromenu04.png" />
+    <None Include="files\aeromenu04mirror.png" />
+    <None Include="files\aeromenu04turned.png" />
+    <None Include="files\backs\03.png" />
+    <None Include="files\backs\02.png" />
+    <None Include="files\backs\base.jpg" />
+    <None Include="files\pacman\GhostBlue.bmp" />
+    <None Include="files\pacman\GhostCyanDown.bmp" />
+    <None Include="files\pacman\GhostCyanLeft.bmp" />
+    <None Include="files\pacman\GhostCyanRight.bmp" />
+    <None Include="files\pacman\GhostCyanUP.bmp" />
+    <None Include="files\pacman\GhostOrangeDown.bmp" />
+    <None Include="files\pacman\GhostOrangeLeft.bmp" />
+    <None Include="files\pacman\GhostOrangeRight.bmp" />
+    <None Include="files\pacman\GhostOrangeUP.bmp" />
+    <None Include="files\pacman\GhostPinkDown.bmp" />
+    <None Include="files\pacman\GhostPinkLeft.bmp" />
+    <None Include="files\pacman\GhostPinkRight.bmp" />
+    <None Include="files\pacman\GhostPinkUP.bmp" />
+    <None Include="files\pacman\GhostRedDown.bmp" />
+    <None Include="files\pacman\GhostRedLeft.bmp" />
+    <None Include="files\pacman\GhostRedRight.bmp" />
+    <None Include="files\pacman\GhostRedUP.bmp" />
+    <None Include="files\pacman\Maze.bmp" />
+    <None Include="files\pacman\PacDown01.bmp" />
+    <None Include="files\pacman\PacDown02.bmp" />
+    <None Include="files\pacman\PacDown03.bmp" />
+    <None Include="files\pacman\PacLeft01.bmp" />
+    <None Include="files\pacman\PacLeft02.bmp" />
+    <None Include="files\pacman\PacLeft03.bmp" />
+    <None Include="files\pacman\PacNeutral.bmp" />
+    <None Include="files\pacman\PacRight01.bmp" />
+    <None Include="files\pacman\PacRight02.bmp" />
+    <None Include="files\pacman\PacRight03.bmp" />
+    <None Include="files\pacman\PacTitle.bmp" />
+    <None Include="files\pacman\PacUP01.bmp" />
+    <None Include="files\pacman\PacUP02.bmp" />
+    <None Include="files\pacman\PacUP03.bmp" />
+    <None Include="files\pacman\Pill.bmp" />
+    <None Include="files\pacman\PowerPill.bmp" />
+    <None Include="files\pacman\GhostEaten.wav" />
+    <None Include="files\pacman\Intro.wav" />
+    <None Include="files\pacman\Invincible.wav" />
+    <None Include="files\pacman\PacEaten.wav" />
+    <None Include="files\pacman\PelletEat1.wav" />
+    <None Include="files\pacman\PelletEat2.wav" />
+    <None Include="files\pacman\Siren.wav" />
+    <None Include="files\backs\alternative.jpg" />
+    <Content Include="aero2018.ico" />
+    <Content Include="DevRain.Data.Extracting.dll" />
+    <None Include="files\alien-walking.gif" />
+    <None Include="files\predator002.gif" />
+    <None Include="files\dancingalien.gif" />
+    <None Include="files\hiphoplady.gif" />
+    <None Include="files\ghost1.gif" />
+    <None Include="files\saucer.gif" />
+    <None Include="files\car.gif" />
+    <None Include="files\themes\clouds1.jpg" />
+    <None Include="files\themes\clouds2.jpg" />
+    <None Include="files\themes\clouds3.jpg" />
+    <None Include="files\themes\ocean1.jpg" />
+    <None Include="files\themes\ocean2.jpg" />
+    <None Include="files\themes\storm1.jpg" />
+    <None Include="files\themes\forest.jpg" />
+    <None Include="files\freestylelady01.gif" />
+    <None Include="files\aero panels\Apps-accessories-calculator-icon.png" />
+    <None Include="files\aero panels\Devices-network-wireless-icon.png" />
+    <None Include="files\aero panels\Devices-printer-icon.png" />
+    <None Include="files\aero panels\network-plug-icon.png" />
+    <None Include="files\backs\alternative2.jpg" />
+    <None Include="files\backs\alternative3.jpg" />
+    <None Include="files\backs\alternative4.jpg" />
+    <None Include="files\windows_maximize.png" />
+    <None Include="files\windows_restore.png" />
+    <None Include="files\spaceinvaders\alienship.gif" />
+    <None Include="files\spaceinvaders\farbackbig.jpg" />
+    <None Include="files\spaceinvaders\Side_Spaceship.gif" />
+    <None Include="files\spaceinvaders\alienshipflat.jpg" />
+    <None Include="files\spaceinvaders\alienshipflatpng.png" />
+    <None Include="files\aero panels\contacts-icon.png" />
+    <None Include="files\aero panels\s_contacts-icon.jpg" />
+    <None Include="files\aero panels\s_Windows-Magnifier-icon.jpg" />
+    <None Include="files\aero panels\Windows-Magnifier-icon.png" />
+    <None Include="files\aero panels\rss-feed-icon.png" />
+    <None Include="files\aero panels\s_rss-feed-icon.jpg" />
+    <None Include="files\backs\alternative5.jpg" />
+    <None Include="files\themes\ancient ruins\greece.jpg" />
+    <None Include="files\themes\night cities\Melbourne.jpg" />
+    <None Include="files\themes\ra1.jpg" />
+    <None Include="files\themes\Cosmo1.jpg" />
+    <None Include="files\themes\dna1.jpg" />
+    <None Include="files\aero panels\Status-audio-volume-high-icon.png" />
+    <None Include="files\aero panels\Status-audio-volume-low-icon.png" />
+    <None Include="files\aero panels\Status-audio-volume-muted-icon.png" />
+    <Content Include="Resources\aeroback-inv.jpg" />
+    <Content Include="Resources\aerobackaqua-inv.jpg" />
+    <Content Include="Resources\aerobackaqua.jpg" />
+    <Content Include="Resources\aerobackblu-inv.jpg" />
+    <Content Include="Resources\aerobackred-inv.jpg" />
+    <None Include="Resources\robot.gif" />
+    <None Include="Resources\egypt1.gif" />
+    <None Include="Resources\egypt2.gif" />
+    <None Include="Resources\poplock.gif" />
+    <None Include="Resources\slide.gif" />
+    <None Include="Resources\space.gif" />
+    <None Include="Resources\street1.gif" />
+    <None Include="Resources\street2.gif" />
+    <None Include="Resources\Time-Alarm-clock-icon.png" />
+    <None Include="Resources\Time-Alarm-Set-clock-icon.png" />
+    <None Include="Resources\Ball_Blasta02.wav" />
+    <None Include="Resources\Ball_Blasta03.wav" />
+    <None Include="Resources\BlackPawn.png" />
+    <None Include="Resources\Board.jpg" />
+    <None Include="Resources\LegalMove.png" />
+    <None Include="Resources\WhitePawn.png" />
+    <None Include="files\Ball_Blasta04.mp3" />
+    <None Include="files\Ball_Blasta04.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <PublishFile Include="Resources\aeroback-inv.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\aerobackaqua-inv.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\aerobackaqua.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\aerobackblu-inv.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\aerobackred-inv.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
