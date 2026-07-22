@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AeroWeb</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 </head>
 <body>
 
@@ -31,11 +31,11 @@
 
   </div>
 
-  <script src="js/apps-registry.js"></script>
-  <script src="js/window-manager.js"></script>
-  <script src="js/settings.js"></script>
-  <script src="js/auth.js"></script>
-  <script src="js/shell.js"></script>
+  <script src="js/apps-registry.js?v=<?php echo time(); ?>"></script>
+  <script src="js/window-manager.js?v=<?php echo time(); ?>"></script>
+  <script src="js/settings.js?v=<?php echo time(); ?>"></script>
+  <script src="js/auth.js?v=<?php echo time(); ?>"></script>
+  <script src="js/shell.js?v=<?php echo time(); ?>"></script>
   <script>
     AeroSettings.init();
     AeroAuth.init(function (username) {
